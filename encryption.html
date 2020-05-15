@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <link href = "encryption.css" rel = "stylesheet"> 
+    <meta charset = "utf-8"/>
+    <title>Encryption</title>
+    <script src = "encryption.js"></script>
+</head>
+<body>
+    <div class = "container">
+        <div>
+            <textarea onchange = "encrypt()" id = "encryption" rows = "5" cols = "50">Write in a Text you want to encrypt.</textarea>
+        </div>
+        <div>
+            <label for = "shift">Shift:</label>
+            <input id ="shift" type = "number" max = "26" min = "1" step = "1" value = "1"/>
+        </div>
+        <div>
+            <textarea onchange = "decrypt()" id = "decryption" rows="5" cols="50">Write in a Text you want to decrypt.</textarea>
+        </div>       
+    </div>
+
+</body>
